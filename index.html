@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url("4.jpg");
+    body {
+  background-image: url(""); /* path of the image */
+  background-size: cover;      /* makes image cover the full page */
+  background-repeat: no-repeat; /* stops tiling */
+  background-attachment: fixed; /* keeps image fixed while scrolling */
+  background-position: center; /* centers the image */
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgb(238, 236, 228);
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .image {
+      box-shadow: 0px 1px 22px -1px rgb(0, 255, 213);
+      height: 180px;
+      width: 180px;
+      border: 2px solid grey;
+      border-radius: 50%;
+      margin: 30px auto;
+      display: block;
+      object-fit: cover;
+      position: relative;
+      top: 105px;
+       animation: float 5s ease-in-out infinite;
+
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    .title {
+      display: block;
+
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 2px solid rgb(36, 138, 133);
+      background-color: rgb(36, 138, 133);
+      color: rgb(255, 254, 254);
+      font-weight: 500;
+      margin-top: -10px;
+      position: relative;
+      top: -237px;
+      font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  animation: glow 2s infinite alternate;
+
+    }
+    
+    
+
+    .about {
+        display: inline-block;
+        border: 2px solid grey;
+        border-radius: 22px;
+      font-size: 40px;
+      margin-top: 50px;
+      color: rgb(119, 108, 7);
+      position: relative;
+      top: 2px;
+      background-color: rgb(226, 185, 228);
+       width: 200px;
+  height: 50px;
+  background: lightblue;
+  border-radius: 10px;
+  box-shadow: 7px 5px 7px 5px rgba(0, 0, 0, 0.3);
+              
+
+
+
+
+
+
+    }
+
+    .para {
+      max-width: 600px;
+     
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: rgb(159, 114, 202);
+      border: 2px solid rgb(214, 209, 209);
+      box-shadow: 4px 9px 43px 1px limegreen;
+      font-family: "EB Garamond", serif;
+      font-size: 20px;
+      line-height: 1.6;
+      font-weight: 100;
+      color: rgb(20, 6, 6);
+    }
+
+    h2 {
+      margin-top: 60px;
+      font-size: 28px;
+      border: 2px solid rgb(175, 175, 223);
+      background-color: rgb(175, 175, 223);
+      border-radius: 50px;
+      display: inline-block;
+      padding: 8px 25px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 200px;
+      margin-top: 40px;
+    }
+
+    .skill {
+      border: 2px solid rgb(175, 175, 223);
+      background-color: rgb(175, 175, 223);
+      border-radius: 70px;
+      width: 100px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .skill:hover {
+      background-color: rgb(119, 108, 207);
+      color: white;
+      transform: scale(1.1);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      font-family: "EB Garamond", serif;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .para {
+        width: 90%;
+        font-size: 16px;
+      }
+      .about {
+        padding: 0px;
+        font-size: 32px;
+      }
+    }
+    .img1{
+        position: relative;
+        top: 10px;
+        left: -304px;
+    }
+    .img2{
+        position: relative;
+        top: 10px;
+        left: -99px;
+    }
+    .img3{
+        position: relative;
+        top: 10px;
+        left: 407px;
+    }
+    .img4{
+        position: relative;
+        top: 10px;
+        left: 2px;
+    }
+    .img{
+        border: 2px solid rgb(221, 209, 209);
+        border-radius: 21px;
+        box-shadow: 12px 14px 13px 7px grey;
+    }
+    .c:hover{
+         background-color: rgb(119, 108, 207);
+      color: white;
+      transform: scale(1.1);
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      font-family: "EB Garamond", serif;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <img class="image" src="image.jpg" alt="Profile Image">
+  <h1 class="title">Crafted by Shubham</h1>
+
+  <div class="about">About Me</div>
+  <p class="para">
+    Hi guys, my name is Shubham Pimpale. I am 17 years old undergraduate student.
+    I am currently pursuing my B. Tech. in Mechanical Engineering from National Institute
+    of Technology Silchar (NIT S). I used HTML and CSS to develop this portfolio website.
+    I hope you'll love it.
+  </p>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="skill">Python</div>
+    <div class="skill">C++</div>
+    <div class="skill">C</div>
+    <div class="skill">HTML</div>
+  </div>
+  <img class ="img img1" height="100px" src="python.jpeg" alt="python">
+  <img class ="img img2" height="100px" src="c++.png" alt="python">
+  <img class ="img img3" height="100px" src="html.png" alt="python">
+  <img class ="img img4" height="100px" src="c.png" alt="python">
+  <section id="contact">
+  <h2 class =" c" style=" position: relative; top: -16px;">Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+</body>
+
+</html>
